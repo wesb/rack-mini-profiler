@@ -25,7 +25,7 @@ module Rack::MiniProfilerRails
     c.skip_paths ||= []
 
     if serves_static_assets?(app)
-      c.skip_paths << app.config.assets.prefix
+      # c.skip_paths << app.config.assets.prefix
     end
 
     if Rails.env.development?
